@@ -1,0 +1,331 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TryLink.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\TryLink.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 209, 157
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "连连看"
+MENU IDR_MENU
+FONT 12, "宋体", 0, 0, 0x1
+BEGIN
+END
+
+IDD_DLG_DEF DIALOG DISCARDABLE  0, 0, 155, 59
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "自定义"
+FONT 9, "宋体"
+BEGIN
+    RTEXT           "行数",IDC_LBL_ROWS,0,3,59,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TXT_ROWS,63,3,38,14,ES_AUTOHSCROLL
+    RTEXT           "列数",IDC_LBL_COLS,0,21,59,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TXT_COLS,63,21,38,14,ES_AUTOHSCROLL
+    RTEXT           "牌种数(1~42)",IDC_STATIC,0,39,59,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TXT_ICONS,63,39,38,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,108,7,42,16
+    PUSHBUTTON      "取消",IDCANCEL,108,33,42,16
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 180, 65
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于“连连看”"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,6,6,20,20,SS_REALSIZEIMAGE
+    CTEXT           "2008年05月01日",IDC_STATIC,33,5,90,11,SS_NOPREFIX
+    CTEXT           "作者：殷海峰",IDC_STATIC,33,23,90,11
+    DEFPUSHBUTTON   "确定(&O)",IDOK,126,8,46,16,WS_GROUP
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,0,37,183,1
+    LTEXT           "说明：本程序完全免费，您可以自由复制、传播。如发现问题请发邮件至：sea_peak@sina.com",
+                    IDC_STATIC,4,43,182,19
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 8,5,1,0
+ PRODUCTVERSION 8,5,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "TryLink Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "8, 5, 1, 0\0"
+            VALUE "InternalName", "TryLink\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "TryLink.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "TryLink 应用程序\0"
+            VALUE "ProductVersion", "8, 5, 1, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 202
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_DLG_DEF, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BMP_ICON_FORE       BITMAP  FIXED IMPURE    "res\\Fore.bmp"
+IDB_BMP_ICON_BACK       BITMAP  DISCARDABLE     "res\\Back.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "游戏(&G)"
+    BEGIN
+        MENUITEM "初级\tF1",                    IDM_BEGIN_0
+        MENUITEM "中级\tF2",                    IDM_BEGIN_1
+        MENUITEM "高级\tF3",                    IDM_BEGIN_2
+        MENUITEM "专家\tF4",                    IDM_BEGIN_3
+        MENUITEM "自定义...",                   IDM_BEGIN_DEF
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    IDM_EXIT
+    END
+    POPUP "选项(&O)"
+    BEGIN
+        MENUITEM "撤销\tCtrl+Z",                IDM_UNDO
+        MENUITEM "重复\tCtrl+Y",                IDM_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "提示\tF5",                    IDM_PROMPT
+        MENUITEM "重新洗牌\tF6",                IDM_CHANGE
+        MENUITEM SEPARATOR
+        MENUITEM "音乐",                        IDM_MUSIC
+        MENUITEM "音效",                        IDM_SOUND
+        MENUITEM SEPARATOR
+        POPUP "图案\tF7"
+        BEGIN
+            MENUITEM "极品",                        IDM_ICON_0
+            MENUITEM "方向",                        IDM_ICON_1
+            MENUITEM "动物",                        IDM_ICON_2
+            MENUITEM "国旗",                        IDM_ICON_3
+            MENUITEM "麻将",                        IDM_ICON_4
+        END
+        POPUP "消牌模式\tF8"
+        BEGIN
+            MENUITEM "不变化",                      IDM_MOVE_00
+            MENUITEM "向上",                        IDM_MOVE_01
+            MENUITEM "向下",                        IDM_MOVE_02
+            MENUITEM "向左",                        IDM_MOVE_03
+            MENUITEM "向右",                        IDM_MOVE_04
+            MENUITEM "向左上",                      IDM_MOVE_05
+            MENUITEM "向左下",                      IDM_MOVE_06
+            MENUITEM "向右上",                      IDM_MOVE_07
+            MENUITEM "向右下",                      IDM_MOVE_08
+            MENUITEM "上左下右",                    IDM_MOVE_09
+            MENUITEM "上右下左",                    IDM_MOVE_10
+            MENUITEM "左下右上",                    IDM_MOVE_11
+            MENUITEM "左上右下",                    IDM_MOVE_12
+            MENUITEM "横向分离",                    IDM_MOVE_13
+            MENUITEM "竖向分离",                    IDM_MOVE_14
+            MENUITEM "横向集中",                    IDM_MOVE_15
+            MENUITEM "竖向集中",                    IDM_MOVE_16
+            MENUITEM "横向等分",                    IDM_MOVE_17
+            MENUITEM "竖向等分",                    IDM_MOVE_18
+            MENUITEM "横向居中",                    IDM_MOVE_19
+            MENUITEM "竖向居中",                    IDM_MOVE_20
+            MENUITEM "横向错开(奇左偶右)",          IDM_MOVE_21
+            MENUITEM "竖向错开(奇上偶下)",          IDM_MOVE_22
+            MENUITEM "横向错开(奇分离偶集中)",      IDM_MOVE_23
+            MENUITEM "竖向错开(奇分离偶集中)",      IDM_MOVE_24
+            MENUITEM "横向错开(奇等分偶居中)",      IDM_MOVE_25
+            MENUITEM "竖向错开(奇等分偶居中)",      IDM_MOVE_26
+            MENUITEM "扩散(先横后竖)",              IDM_MOVE_27
+            MENUITEM "扩散(先竖后横)",              IDM_MOVE_28
+            MENUITEM "集中(先横后竖)",              IDM_MOVE_29
+            MENUITEM "集中(先竖后横)",              IDM_MOVE_30
+            MENUITEM "Z 形向上",                    IDM_MOVE_31
+            MENUITEM "Z 形向下",                    IDM_MOVE_32
+            MENUITEM "N 形向左",                    IDM_MOVE_33
+            MENUITEM "N 形向右",                    IDM_MOVE_34
+            MENUITEM "S 形向上",                    IDM_MOVE_35
+            MENUITEM "S 形向下",                    IDM_MOVE_36
+            MENUITEM "逆时针回形旋转",              IDM_MOVE_37
+            MENUITEM "顺时针回形旋转",              IDM_MOVE_38
+            MENUITEM "交错回形旋转",                IDM_MOVE_39
+            MENUITEM "逆时针螺旋向外",              IDM_MOVE_40
+            MENUITEM "逆时针螺旋向内",              IDM_MOVE_41
+            MENUITEM "顺时针螺旋向外",              IDM_MOVE_42
+            MENUITEM "顺时针螺旋向内",              IDM_MOVE_43
+        END
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于(&A)...",                 IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_WAVE_OK             WAVE    DISCARDABLE     "res\\OK.wav"
+IDR_WAVE_XIPAI          WAVE    DISCARDABLE     "res\\Huan.wav"
+IDR_WAVE_OH             WAVE    DISCARDABLE     "res\\OH.wav"
+IDR_WAVE_ERR            WAVE    DISCARDABLE     "res\\Err.wav"
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\TryLink.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
