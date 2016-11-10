@@ -1,4 +1,6 @@
 ﻿GpsTime ----------- 转换 GPS 时间(MFC)  
 HexToNum ---------- 计算机内码转换为 int、float、double、字符串(MFC)  
 mine -------------- 扫雷程序(VB6、MFC)  
+SerialPort -------- 串行通讯示例代码(Qt)
+SolveEquation ----- 求解一元四次方程(VC++、VB、C#、VBA、VBS、JS)
 WordBlogAccount --- 管理 Word 博客账户(VC++)  

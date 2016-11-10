@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SolveEquationCom", "SolveEquationCom.vcproj", "{2144BBEC-359E-45E7-9790-A721F309935E}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = DA
+		ConfigName.1 = DU
+		ConfigName.2 = RA
+		ConfigName.3 = RU
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{2144BBEC-359E-45E7-9790-A721F309935E}.DA.ActiveCfg = DA|Win32
+		{2144BBEC-359E-45E7-9790-A721F309935E}.DA.Build.0 = DA|Win32
+		{2144BBEC-359E-45E7-9790-A721F309935E}.DU.ActiveCfg = DU|Win32
+		{2144BBEC-359E-45E7-9790-A721F309935E}.DU.Build.0 = DU|Win32
+		{2144BBEC-359E-45E7-9790-A721F309935E}.RA.ActiveCfg = RA|Win32
+		{2144BBEC-359E-45E7-9790-A721F309935E}.RA.Build.0 = RA|Win32
+		{2144BBEC-359E-45E7-9790-A721F309935E}.RU.ActiveCfg = RU|Win32
+		{2144BBEC-359E-45E7-9790-A721F309935E}.RU.Build.0 = RU|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

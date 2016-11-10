@@ -1,0 +1,38 @@
+//SolveEquationCom.idl
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(20907E97-4E8D-4682-BA03-AB1164C199CA),
+		dual,
+		helpstring("IEquation Interface"),
+		pointer_default(unique)
+	]
+	interface IEquation : IDispatch
+	{
+		[id(1), helpstring("method Solve")] HRESULT Solve([in] VARIANT*z,[out,retval] long*n);
+		[id(2), helpstring("method real")] HRESULT real([in] long i,[out,retval] double*v);
+		[id(3), helpstring("method imag")] HRESULT imag([in] long i,[out,retval] double*v);
+		[id(4), helpstring("method diff")] HRESULT diff([in] long i,[out,retval] double*v);
+		[propget, id(5), helpstring("property RootCount")] HRESULT RootCount([out, retval] long *pVal);
+	};
+
+[
+	uuid(4835C47C-F2D5-46E8-A29A-1F38E62B26C4),
+	version(1.0),
+	helpstring("SolveEquation 1.0 Type Library")
+]
+library SolveEquationLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(E2E86938-6DE1-49E1-98A3-A0DD9882E837),
+		helpstring("Equation Class")
+	]
+	coclass Equation
+	{
+		[default] interface IEquation;
+	};
+};

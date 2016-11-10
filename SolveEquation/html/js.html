@@ -1,0 +1,106 @@
+﻿<html> 
+<head> 
+  <meta charset="utf-8" /> 
+  <title>求解一元四次方程</title>
+  <script language="javascript">
+    var obj = new ActiveXObject("SolveEquation");
+    function OnTextChange()
+    {
+      var z = new Array(10);
+      var i;
+      for(i = 0;i < 10;++i)
+      {
+        z[i] = document.getElementById("z" + i).value;
+      }
+      var n = obj.Solve(z);
+      for(i = 1;i <= 4;++i)
+      {
+        if(i <= n)
+        {
+          document.getElementById("xr" + i).innerText = obj.real(i - 1);
+          document.getElementById("xi" + i).innerText = obj.imag(i - 1);
+          document.getElementById("xe" + i).innerText = obj.diff(i - 1);
+        }
+        else
+        {
+          document.getElementById("xr" + i).innerText = "";
+          document.getElementById("xi" + i).innerText = "";
+          document.getElementById("xe" + i).innerText = "";
+        }
+      }
+    }
+  </script> 
+</head> 
+<body>
+  <p><label>求解方程：a * x ^ 4 + b * x ^ 3 + c * x ^ 2 + d * x + e = 0</label></p>
+  <p><label>请输入方程系数：</label></p>
+  <p>
+    <label>a = </label>
+    <input type="text" id="z8" value="" onpropertychange="OnTextChange()" >
+    <label>+</label>
+    <input type="text" id="z9" value="" onpropertychange="OnTextChange()" >
+    <label>i</label>
+  </p>
+  <p>
+    <label>b = </label>
+    <input type="text" id="z6" value="" onpropertychange="OnTextChange()" >
+    <label>+</label>
+    <input type="text" id="z7" value="" onpropertychange="OnTextChange()" >
+    <label>i</label>
+  </p>
+  <p>
+    <label>c = </label>
+    <input type="text" id="z4" value="" onpropertychange="OnTextChange()" >
+    <label>+</label>
+    <input type="text" id="z5" value="" onpropertychange="OnTextChange()" >
+    <label>i</label>
+  </p>
+  <p>
+    <label>d = </label>
+    <input type="text" id="z2" value="" onpropertychange="OnTextChange()" >
+    <label>+</label>
+    <input type="text" id="z3" value="" onpropertychange="OnTextChange()" >
+    <label>i</label>
+  </p>
+  <p>
+    <label>e = </label>
+    <input type="text" id="z0" value="" onpropertychange="OnTextChange()" >
+    <label>+</label>
+    <input type="text" id="z1" value="" onpropertychange="OnTextChange()" >
+    <label>i</label>
+  </p>
+  <p><label>计算结果如下：</label></p>
+  <p>
+    <label>x1 = </label>
+    <input type="text" id="xr1" value="">
+    <label>+</label>
+    <input type="text" id="xi1" value="">
+    <label>i；误差=</label>
+    <input type="text" id="xe1" value="">
+  </p>
+  <p>
+    <label>x2 = </label>
+    <input type="text" id="xr2" value="">
+    <label>+</label>
+    <input type="text" id="xi2" value="">
+    <label>i；误差=</label>
+    <input type="text" id="xe2" value="">
+  </p>
+  <p>
+    <label>x3 = </label>
+    <input type="text" id="xr3" value="">
+    <label>+</label>
+    <input type="text" id="xi3" value="">
+    <label>i；误差=</label>
+    <input type="text" id="xe3" value="">
+  </p>
+  <p>
+    <label>x4 = </label>
+    <input type="text" id="xr4" value="">
+    <label>+</label>
+    <input type="text" id="xi4" value="">
+    <label>i；误差=</label>
+    <input type="text" id="xe4" value="">
+  </p>
+</body> 
+</html> 

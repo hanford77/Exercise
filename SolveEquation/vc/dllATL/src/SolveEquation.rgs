@@ -1,0 +1,26 @@
+HKCR
+{
+	SolveEquation.1 = s 'SolveEquation Class'
+	{
+		CLSID = s '{E2E86938-6DE1-49E1-98A3-A0DD9882E837}'
+	}
+	SolveEquation = s 'SolveEquation Class'
+	{
+		CLSID = s '{E2E86938-6DE1-49E1-98A3-A0DD9882E837}'
+		CurVer = s 'SolveEquation.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {E2E86938-6DE1-49E1-98A3-A0DD9882E837} = s 'SolveEquation Class'
+		{
+			ProgID = s 'SolveEquation.1'
+			VersionIndependentProgID = s 'SolveEquation'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{4835C47C-F2D5-46E8-A29A-1F38E62B26C4}'
+		}
+	}
+}

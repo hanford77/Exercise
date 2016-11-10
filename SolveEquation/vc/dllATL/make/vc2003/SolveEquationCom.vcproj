@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="SolveEquationCom"
+	ProjectGUID="{2144BBEC-359E-45E7-9790-A721F309935E}"
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="DA|Win32"
+			OutputDirectory="..\..\bin\vc2003-$(PlatformName)-$(ConfigurationName)"
+			IntermediateDirectory="Temp\vc2003-$(PlatformName)-$(ConfigurationName)"
+			ConfigurationType="2"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL"
+				MinimalRebuild="TRUE"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				UsePrecompiledHeader="3"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="TRUE"
+				DebugInformationFormat="4"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				OutputFile="$(OutDir)\$(ProjectName).dll"
+				LinkIncremental="2"
+				ModuleDefinitionFile="..\..\src\SolveEquationCom.def"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile="$(IntDir)\$(TargetName).pdb"
+				SubSystem="2"
+				ImportLibrary="$(TargetDir)$(TargetName).lib"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				CommandLine="del &quot;$(TargetDir)*.ilk&quot; &quot;$(TargetDir)*.exp&quot;
+cd /d &quot;$(SolutionDir)&quot;
+if exist ..\build.bat call ..\build.bat
+if defined RunDirectory echo d|xcopy &quot;$(TargetPath)&quot; &quot;%RunDirectory%vc2003-$(PlatformName)-$(ConfigurationName)&quot; /Y
+"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="RA|Win32"
+			OutputDirectory="..\..\bin\vc2003-$(PlatformName)-$(ConfigurationName)"
+			IntermediateDirectory="Temp\vc2003-$(PlatformName)-$(ConfigurationName)"
+			ConfigurationType="2"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL"
+				RuntimeLibrary="2"
+				UsePrecompiledHeader="3"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="TRUE"
+				DebugInformationFormat="3"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				OutputFile="$(OutDir)\$(ProjectName).dll"
+				LinkIncremental="1"
+				ModuleDefinitionFile="..\..\src\SolveEquationCom.def"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile="$(IntDir)\$(TargetName).pdb"
+				SubSystem="2"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				ImportLibrary="$(TargetDir)$(TargetName).lib"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				CommandLine="del &quot;$(TargetDir)*.ilk&quot; &quot;$(TargetDir)*.exp&quot;
+cd /d &quot;$(SolutionDir)&quot;
+if exist ..\build.bat call ..\build.bat
+if defined RunDirectory echo d|xcopy &quot;$(TargetPath)&quot; &quot;%RunDirectory%vc2003-$(PlatformName)-$(ConfigurationName)&quot; /Y
+"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="DU|Win32"
+			OutputDirectory="..\..\bin\vc2003-$(PlatformName)-$(ConfigurationName)"
+			IntermediateDirectory="Temp\vc2003-$(PlatformName)-$(ConfigurationName)"
+			ConfigurationType="2"
+			CharacterSet="1">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL"
+				MinimalRebuild="TRUE"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				UsePrecompiledHeader="3"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="TRUE"
+				DebugInformationFormat="4"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				OutputFile="$(OutDir)\$(ProjectName).dll"
+				LinkIncremental="2"
+				ModuleDefinitionFile="..\..\src\SolveEquationCom.def"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile="$(IntDir)\$(TargetName).pdb"
+				SubSystem="2"
+				ImportLibrary="$(TargetDir)$(TargetName).lib"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				CommandLine="del &quot;$(TargetDir)*.ilk&quot; &quot;$(TargetDir)*.exp&quot;
+cd /d &quot;$(SolutionDir)&quot;
+if exist ..\build.bat call ..\build.bat
+if defined RunDirectory echo d|xcopy &quot;$(TargetPath)&quot; &quot;%RunDirectory%vc2003-$(PlatformName)-$(ConfigurationName)&quot; /Y
+"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="RU|Win32"
+			OutputDirectory="..\..\bin\vc2003-$(PlatformName)-$(ConfigurationName)"
+			IntermediateDirectory="Temp\vc2003-$(PlatformName)-$(ConfigurationName)"
+			ConfigurationType="2"
+			CharacterSet="1">
+			<Tool
+				Name="VCCLCompilerTool"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL"
+				RuntimeLibrary="2"
+				UsePrecompiledHeader="3"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="TRUE"
+				DebugInformationFormat="3"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				OutputFile="$(OutDir)\$(ProjectName).dll"
+				LinkIncremental="1"
+				ModuleDefinitionFile="..\..\src\SolveEquationCom.def"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile="$(IntDir)\$(TargetName).pdb"
+				SubSystem="2"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				ImportLibrary="$(TargetDir)$(TargetName).lib"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				CommandLine="del &quot;$(TargetDir)*.ilk&quot; &quot;$(TargetDir)*.exp&quot;
+cd /d &quot;$(SolutionDir)&quot;
+if exist ..\build.bat call ..\build.bat
+if defined RunDirectory echo d|xcopy &quot;$(TargetPath)&quot; &quot;%RunDirectory%vc2003-$(PlatformName)-$(ConfigurationName)&quot; /Y
+"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl"
+			UniqueIdentifier="{F49A11E1-5BD4-2541-AB58-B0AACD3E6CC5}">
+			<File
+				RelativePath="..\..\src\Equation.h">
+			</File>
+			<File
+				RelativePath="..\..\src\pch\StdAfx.h">
+			</File>
+			<File
+				RelativePath="..\..\src\resource.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"
+			UniqueIdentifier="{0A70EA7B-74E8-2C49-B360-BFC82C917F8E}">
+			<File
+				RelativePath="..\..\src\AppID.rgs">
+			</File>
+			<File
+				RelativePath="..\..\src\SolveEquation.rgs">
+			</File>
+		</Filter>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
+			UniqueIdentifier="{8E809296-B47C-C844-B43B-6C346ECED413}">
+			<File
+				RelativePath="..\..\src\Equation.cpp">
+			</File>
+			<File
+				RelativePath="..\..\src\pch\StdAfx.cpp">
+			</File>
+			<File
+				RelativePath="..\..\src\SolveEquationCom.def">
+			</File>
+			<File
+				RelativePath="..\..\src\SolveEquationCom.idl">
+			</File>
+			<File
+				RelativePath="..\..\src\SolveEquationCom.rc">
+			</File>
+			<File
+				RelativePath="..\..\src\SolveEquationComDllMain.cpp">
+			</File>
+		</Filter>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

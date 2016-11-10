@@ -1,0 +1,22 @@
+//
+// SOLVEEQUATION.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Add manually edited resources here...
+/////////////////////////////////////////////////////////////////////////////
+
+#ifdef _WIN32_WCE
+    HI_RES_AWARE CEUX DISCARDABLE
+    BEGIN
+        0x0001         //1 - 启用高分辨率(即关闭模拟层) 0 - 禁用高分辨率(即开启模拟层)
+    END    
+    #if UNDER_CE > 1   //EVC3.0 和 EVC4.0 的 UNDER_CE 被定义为版本号
+        #include "wceres.rc"
+    #endif
+#endif
