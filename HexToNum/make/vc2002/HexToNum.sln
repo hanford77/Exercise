@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HexToNum", "HexToNum.vcproj", "{DB64B2F2-A2ED-4B53-901B-6895E07B56B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = DA
+		ConfigName.1 = DU
+		ConfigName.2 = RA
+		ConfigName.3 = RU
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{DB64B2F2-A2ED-4B53-901B-6895E07B56B9}.DA.ActiveCfg = DA|Win32
+		{DB64B2F2-A2ED-4B53-901B-6895E07B56B9}.DA.Build.0 = DA|Win32
+		{DB64B2F2-A2ED-4B53-901B-6895E07B56B9}.DU.ActiveCfg = DU|Win32
+		{DB64B2F2-A2ED-4B53-901B-6895E07B56B9}.DU.Build.0 = DU|Win32
+		{DB64B2F2-A2ED-4B53-901B-6895E07B56B9}.RA.ActiveCfg = RA|Win32
+		{DB64B2F2-A2ED-4B53-901B-6895E07B56B9}.RA.Build.0 = RA|Win32
+		{DB64B2F2-A2ED-4B53-901B-6895E07B56B9}.RU.ActiveCfg = RU|Win32
+		{DB64B2F2-A2ED-4B53-901B-6895E07B56B9}.RU.Build.0 = RU|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

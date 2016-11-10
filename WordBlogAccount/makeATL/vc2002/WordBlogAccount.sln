@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WordBlogAccount", "WordBlogAccount.vcproj", "{D5F9A7E1-8DF8-470A-A649-77101179CB88}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = DA
+		ConfigName.1 = DU
+		ConfigName.2 = RA
+		ConfigName.3 = RU
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{D5F9A7E1-8DF8-470A-A649-77101179CB88}.DA.ActiveCfg = DA|Win32
+		{D5F9A7E1-8DF8-470A-A649-77101179CB88}.DA.Build.0 = DA|Win32
+		{D5F9A7E1-8DF8-470A-A649-77101179CB88}.DU.ActiveCfg = DU|Win32
+		{D5F9A7E1-8DF8-470A-A649-77101179CB88}.DU.Build.0 = DU|Win32
+		{D5F9A7E1-8DF8-470A-A649-77101179CB88}.RA.ActiveCfg = RA|Win32
+		{D5F9A7E1-8DF8-470A-A649-77101179CB88}.RA.Build.0 = RA|Win32
+		{D5F9A7E1-8DF8-470A-A649-77101179CB88}.RU.ActiveCfg = RU|Win32
+		{D5F9A7E1-8DF8-470A-A649-77101179CB88}.RU.Build.0 = RU|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

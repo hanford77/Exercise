@@ -1,0 +1,249 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\HexToNum.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\HexToNum.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_HEXTONUM_DIALOG DIALOGEX 0, 0, 318, 339
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "HexToNum"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_TXT_HEX,12,15,294,36,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL
+    GROUPBOX        "计算机内码(十六进制)",IDC_STATIC,5,4,307,53,WS_GROUP
+    RTEXT           "int8",IDC_STATIC,11,72,30,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TXT_INT8_L,47,72,102,14,ES_AUTOHSCROLL
+    RTEXT           "int16",IDC_STATIC,11,89,30,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TXT_INT16_L,47,89,102,14,ES_AUTOHSCROLL
+    RTEXT           "int32",IDC_STATIC,11,106,30,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TXT_INT32_L,47,106,102,14,ES_AUTOHSCROLL
+    RTEXT           "int64",IDC_STATIC,11,123,30,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TXT_INT64_L,47,123,102,14,ES_AUTOHSCROLL
+    RTEXT           "uint8",IDC_STATIC,11,140,30,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TXT_UINT8_L,47,140,102,14,ES_AUTOHSCROLL
+    RTEXT           "uint16",IDC_STATIC,11,157,30,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TXT_UINT16_L,47,157,102,14,ES_AUTOHSCROLL
+    RTEXT           "uint32",IDC_STATIC,11,174,30,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TXT_UINT32_L,47,174,102,14,ES_AUTOHSCROLL
+    RTEXT           "uint64",IDC_STATIC,11,191,30,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TXT_UINT64_L,47,191,102,14,ES_AUTOHSCROLL
+    RTEXT           "float",IDC_STATIC,11,208,30,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TXT_FLOAT_L,47,208,102,14,ES_AUTOHSCROLL
+    RTEXT           "double",IDC_STATIC,11,225,30,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TXT_DOUBLE_L,47,225,102,14,ES_AUTOHSCROLL
+    GROUPBOX        "低位在前",IDC_STATIC,5,61,151,184
+    RTEXT           "int8",IDC_STATIC,167,72,30,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TXT_INT8_B,203,72,102,14,ES_AUTOHSCROLL
+    RTEXT           "int16",IDC_STATIC,167,89,30,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TXT_INT16_B,203,89,102,14,ES_AUTOHSCROLL
+    RTEXT           "int32",IDC_STATIC,167,106,30,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TXT_INT32_B,203,106,102,14,ES_AUTOHSCROLL
+    RTEXT           "int64",IDC_STATIC,167,123,30,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TXT_INT64_B,203,123,102,14,ES_AUTOHSCROLL
+    RTEXT           "uint8",IDC_STATIC,167,140,30,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TXT_UINT8_B,203,140,102,14,ES_AUTOHSCROLL
+    RTEXT           "uint16",IDC_STATIC,167,157,30,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TXT_UINT16_B,203,157,102,14,ES_AUTOHSCROLL
+    RTEXT           "uint32",IDC_STATIC,167,174,30,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TXT_UINT32_B,203,174,102,14,ES_AUTOHSCROLL
+    RTEXT           "uint64",IDC_STATIC,167,191,30,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TXT_UINT64_B,203,191,102,14,ES_AUTOHSCROLL
+    RTEXT           "float",IDC_STATIC,167,208,30,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TXT_FLOAT_B,203,208,102,14,ES_AUTOHSCROLL
+    RTEXT           "double",IDC_STATIC,167,225,30,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_TXT_DOUBLE_B,203,225,102,14,ES_AUTOHSCROLL
+    GROUPBOX        "高位在前",IDC_STATIC,161,61,151,184
+    CONTROL         "MBCS",IDC_OPT_MBCS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,12,259,32,10
+    CONTROL         "Unicode(低位在前)",IDC_OPT_UNICODE,"Button",
+                    BS_AUTORADIOBUTTON,49,259,84,10
+    CONTROL         "Unicode(高位在前)",IDC_OPT_UNICODE_BIG,"Button",
+                    BS_AUTORADIOBUTTON,138,259,84,10
+    CONTROL         "UTF-7",IDC_OPT_UTF7,"Button",BS_AUTORADIOBUTTON,227,259,
+                    36,10
+    CONTROL         "UTF-8",IDC_OPT_UTF8,"Button",BS_AUTORADIOBUTTON,268,259,
+                    36,10
+    EDITTEXT        IDC_TXT_STRING,12,274,294,36,ES_MULTILINE | 
+                    ES_WANTRETURN | WS_VSCROLL | WS_GROUP
+    GROUPBOX        "字符串",IDC_STATIC,5,249,307,67
+    RTEXT           "float 有效位数",IDC_STATIC,5,321,61,14,SS_CENTERIMAGE
+    COMBOBOX        IDC_CBO_FLOAT,72,321,39,333,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "double 有效位数",IDC_STATIC,202,321,65,14,
+                    SS_CENTERIMAGE
+    COMBOBOX        IDC_CBO_DOUBLE,273,321,39,333,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "HexToNum Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "HexToNum\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2009\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "HexToNum.EXE\0"
+            VALUE "ProductName", "HexToNum 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_HEXTONUM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 311
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 332
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 HexToNum(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\HexToNum.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

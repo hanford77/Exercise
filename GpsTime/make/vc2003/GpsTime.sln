@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GpsTime", "GpsTime.vcproj", "{E8917959-AA3D-4410-9592-BB86BA65599D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		DA = DA
+		DU = DU
+		RA = RA
+		RU = RU
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E8917959-AA3D-4410-9592-BB86BA65599D}.DA.ActiveCfg = DA|Win32
+		{E8917959-AA3D-4410-9592-BB86BA65599D}.DA.Build.0 = DA|Win32
+		{E8917959-AA3D-4410-9592-BB86BA65599D}.DU.ActiveCfg = DU|Win32
+		{E8917959-AA3D-4410-9592-BB86BA65599D}.DU.Build.0 = DU|Win32
+		{E8917959-AA3D-4410-9592-BB86BA65599D}.RA.ActiveCfg = RA|Win32
+		{E8917959-AA3D-4410-9592-BB86BA65599D}.RA.Build.0 = RA|Win32
+		{E8917959-AA3D-4410-9592-BB86BA65599D}.RU.ActiveCfg = RU|Win32
+		{E8917959-AA3D-4410-9592-BB86BA65599D}.RU.Build.0 = RU|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
