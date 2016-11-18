@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    
+<!-- Settings -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:layout_marginTop="5dp"
+	android:layout_marginBottom="5dp"
+	android:layout_margin="5dip"
+	android:background="#505050"    
+    android:tag="configure block"
+    android:layout_weight="1"
+    >
+	    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1"
+	    >
+		    	 
+		 	<Button
+		 	    android:id="@+id/btnOpen"
+		 	    android:layout_width="fill_parent"
+		 	    android:layout_height="fill_parent"
+		 	    android:layout_margin="3dp"
+		 	    android:layout_weight="1"
+		 	    android:background="@drawable/button_pattern"
+		 	    android:gravity="center"
+		 	    android:scaleType="centerInside"
+		 	    android:text="打开" />
+	
+    	</LinearLayout>
+	    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1"
+	    >
+		    	 
+		 	<Button
+		 	    android:id="@+id/btnSend"
+		 	    android:layout_width="fill_parent"
+		 	    android:layout_height="fill_parent"
+		 	    android:layout_margin="3dp"
+		 	    android:layout_weight="1"
+		 	    android:background="@drawable/button_pattern"
+		 	    android:gravity="center"
+		 	    android:scaleType="centerInside"
+		 	    android:text="发送" />
+	
+    	</LinearLayout>	    		    		  
+	    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1"
+	    >
+		    	 
+		 	<Button
+		 	    android:id="@+id/btnClose"
+		 	    android:layout_width="fill_parent"
+		 	    android:layout_height="fill_parent"
+		 	    android:layout_margin="3dp"
+		 	    android:layout_weight="1"
+		 	    android:background="@drawable/button_pattern"
+		 	    android:gravity="center"
+		 	    android:scaleType="centerInside"
+		 	    android:text="关闭" />
+	
+    	</LinearLayout>
+    
+    
+    </LinearLayout>
+
+<!-- Read byte -->
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:layout_marginTop="5dp"
+	android:layout_marginBottom="5dp"
+	android:layout_margin="5dip"    
+	android:background="#505050"
+    android:tag="Read block"
+    android:layout_weight="1"
+    >
+
+	 			
+	  <TextView android:text = "Read Bytes" 
+	 			android:textStyle="bold"
+	 			android:gravity="center"
+	 			android:id="@+id/ReadBytes"
+	 			android:layout_height="fill_parent"
+	 			android:layout_width="fill_parent"
+	 			android:layout_weight="6"
+	 			/>
+	 			
+	 	<EditText
+	 	    android:id="@+id/txtRecv"
+	 	    android:layout_width="fill_parent"
+	 	    android:layout_height="fill_parent"
+	 	    android:layout_margin="10dp"
+	 	    android:layout_weight="1"
+	 	    android:background="#708070"
+	 	    android:focusableInTouchMode="false"
+	 	    android:gravity="left|center_vertical" />
+
+	</LinearLayout>
+    
+<!-- Write byte -->
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="5dip"
+        android:layout_weight="1"
+        android:background="#505050"
+        android:tag="Write block" >
+	  			
+	  <TextView android:text = "Write Bytes" 
+	 			android:textStyle="bold"
+	 			android:gravity="center"
+	 			android:id="@+id/WriteBytes"
+	 			android:layout_height="fill_parent"
+	 			android:layout_width="fill_parent"
+	 			android:layout_weight="6"
+	 			/>
+	 			
+	 	<EditText
+	 	    android:id="@+id/txtSend"
+	 	    android:layout_width="fill_parent"
+	 	    android:layout_height="fill_parent"
+	 	    android:layout_margin="10dp"
+	 	    android:layout_weight="1"
+	 	    android:background="#708070"
+	 	    android:editable="true"
+	 	    android:gravity="left|center"
+	 	    android:maxLength="64" />				  			 			
+	
+	</LinearLayout>
+</LinearLayout>
