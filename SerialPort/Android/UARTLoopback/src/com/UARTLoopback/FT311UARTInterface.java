@@ -16,6 +16,7 @@ import android.content.IntentFilter;
 import android.hardware.usb.UsbAccessory;
 import android.hardware.usb.UsbManager;
 import android.os.ParcelFileDescriptor;
+
 /******************************************************************************\
  用于串口通讯
 \******************************************************************************/
@@ -62,7 +63,8 @@ public class FT311UARTInterface
             try
             {
                 return s.read(data, 0, nBytes);
-            } catch (IOException e)
+            }
+            catch (IOException e)
             {
             }
         }
@@ -466,8 +468,8 @@ public class FT311UARTInterface
             }
         }
     };
-    /*usb input data handler*/
-    ThreadRead m_ThreadRead =   null;
+    ThreadRead m_ThreadRead =   null;   //读取数据的线程
+    //读取数据的线程
     private class ThreadRead extends Thread
     {
         public boolean m_bExit = false;
@@ -508,7 +510,7 @@ public class FT311UARTInterface
                             m_Buffer[m_nBufferW]    =   data[i];
                             if(++m_nBufferW >= m_nBufferSize)
                             {
-                                m_nBufferW = m_nBufferSize;
+                                m_nBufferW  =   0;
                             }
                         }
                         m_Lock.unlock();

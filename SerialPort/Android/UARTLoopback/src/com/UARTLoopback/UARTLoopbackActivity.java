@@ -9,15 +9,18 @@ import android.os.Message;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class UARTLoopbackActivity extends Activity {
-    private Button      m_btnOpen   =   null;   //打开按钮
-    private Button      m_btnClose  =   null;   //关闭按钮
-    private Button      m_btnSend   =   null;   //发送按钮
-    private EditText    m_txtSend   =   null;   //发送文本
-    private EditText    m_txtRecv   =   null;   //接收文本
-    private String      m_sRecv     =   "";     //接收到的文本
+    private Button     m_btnOpen	=  	null;   //打开按钮
+    private Button     m_btnClose  =  	null;   //关闭按钮
+    private Button     m_btnSend   =	null;   //发送按钮
+    private TextView 	m_ReadBytes =	null;
+    private EditText   m_txtSend   =  	null;   //发送文本
+    private EditText   m_txtRecv   =  	null;   //接收文本
+    private String     m_sRecv     =  	"";  	//接收到的文本
+    private long 		m_nRecv     =  	0;		//接收到的字节数
     private com.UARTLoopback.FT311UARTInterface m_Comm = null;  //串口
     private com.UARTLoopback.FT311UARTInterface.EventPlugPull m_EventPlugPull = new com.UARTLoopback.FT311UARTInterface.EventPlugPull(){
         public void onEvent(int nPlugPull)
@@ -30,7 +33,8 @@ public class UARTLoopbackActivity extends Activity {
         {//接收到串口数据，就调用此函数
         	try
         	{
-        		m_sRecv += new String(data, 0, nBytes, "UTF-8");
+        		m_nRecv	+=	nBytes;
+        		m_sRecv +=	new String(data, 0, nBytes, "UTF-8");
         	}
         	catch (UnsupportedEncodingException ex)
         	{        		
@@ -47,6 +51,7 @@ public class UARTLoopbackActivity extends Activity {
         m_Comm.setEventDataReceived(m_EventDataReceived);
         m_Comm.setEventPlugPull(m_EventPlugPull);
         m_txtSend   =   (EditText) findViewById(R.id.txtSend);
+        m_ReadBytes	=	(TextView) findViewById(R.id.ReadBytes);
         m_txtRecv   =   (EditText) findViewById(R.id.txtRecv);
         m_btnOpen   =   (Button) findViewById(R.id.btnOpen);
         m_btnOpen.setOnClickListener(new Button.OnClickListener()
@@ -113,6 +118,7 @@ public class UARTLoopbackActivity extends Activity {
             {
             case 1:
                 m_txtRecv.setText(m_sRecv);
+                m_ReadBytes.setText(String.valueOf(m_nRecv));
                 break;
             }
             super.handleMessage(msg);
