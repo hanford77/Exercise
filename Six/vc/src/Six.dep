@@ -1,0 +1,22 @@
+# Microsoft Developer Studio Generated Dependency File, included by Six.mak
+
+.\Six.cpp : \
+	".\Six.h"\
+	".\SixDlg.h"\
+	".\StdAfx.h"\
+	
+
+.\Six.rc : \
+	".\res\Six.ico"\
+	".\res\Six.rc2"\
+	
+
+.\SixDlg.cpp : \
+	".\Six.h"\
+	".\SixDlg.h"\
+	".\StdAfx.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	

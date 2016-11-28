@@ -1,0 +1,248 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Six.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Six.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SIX_DIALOG DIALOGEX 0, 0, 403, 237
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "六段比较法"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_L0,84,13,50,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_L1,217,13,50,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_L2,350,13,50,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_L3,84,30,50,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_L4,217,30,50,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_L5,350,30,50,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_L6,84,47,50,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_L7,217,47,50,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_L8,350,47,50,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_L9,84,64,50,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_L10,217,64,50,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_L11,350,64,50,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_L12,84,81,50,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_L13,217,81,50,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_L14,350,81,50,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_L15,84,98,50,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_L16,217,98,50,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_L17,350,98,50,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_L18,84,115,50,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_L19,217,115,50,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_L20,350,115,50,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_D0,29,13,51,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_D1,162,13,51,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_D2,295,13,51,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_D3,29,30,51,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_D4,162,30,51,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_D5,295,30,51,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_D6,29,47,51,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_D7,162,47,51,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_D8,295,47,51,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_D9,29,64,51,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_D10,162,64,51,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_D11,295,64,51,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_D12,29,81,51,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_D13,162,81,51,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_D14,295,81,51,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_D15,29,98,51,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_D16,162,98,51,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_D17,295,98,51,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_D18,29,115,51,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_D19,162,115,51,13,ES_MULTILINE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_D20,295,115,51,13,ES_MULTILINE | ES_AUTOHSCROLL
+    PUSHBUTTON      "计算(&C)",IDC_CAL,352,133,48,15
+    PUSHBUTTON      "载入(&L)",IDC_BTNLOAD,352,161,48,15
+    PUSHBUTTON      "保存(&S)",IDC_BTNSAVE,352,189,48,15
+    PUSHBUTTON      "关闭(&X)",IDC_BTNCLOSE,352,217,48,15
+    EDITTEXT        IDC_TXT,4,133,341,99,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL
+    LTEXT           "0-7",IDC_NAME0,5,16,20,8
+    LTEXT           "基线长",IDC_STATIC,41,1,45,11
+    LTEXT           "观测值",IDC_STATIC,93,1,44,10
+    LTEXT           "0-7",IDC_NAME1,138,16,20,8
+    LTEXT           "基线长",IDC_STATIC,173,1,45,11
+    LTEXT           "观测值",IDC_STATIC,231,1,44,10
+    LTEXT           "0-7",IDC_NAME2,271,16,20,8
+    LTEXT           "基线长",IDC_STATIC,306,1,45,11
+    LTEXT           "观测值",IDC_STATIC,359,1,44,10
+    LTEXT           "0-7",IDC_NAME3,5,33,20,8
+    LTEXT           "0-7",IDC_NAME4,138,33,20,8
+    LTEXT           "0-7",IDC_NAME5,271,33,20,8
+    LTEXT           "0-7",IDC_NAME6,5,50,20,8
+    LTEXT           "0-7",IDC_NAME7,138,50,20,8
+    LTEXT           "0-7",IDC_NAME8,271,50,20,8
+    LTEXT           "0-7",IDC_NAME9,5,67,20,8
+    LTEXT           "0-7",IDC_NAME10,138,67,20,8
+    LTEXT           "0-7",IDC_NAME11,271,67,20,8
+    LTEXT           "0-7",IDC_NAME12,5,84,20,8
+    LTEXT           "0-7",IDC_NAME13,138,84,20,8
+    LTEXT           "0-7",IDC_NAME14,271,84,20,8
+    LTEXT           "0-7",IDC_NAME15,5,101,20,8
+    LTEXT           "0-7",IDC_NAME16,138,101,20,8
+    LTEXT           "0-7",IDC_NAME17,271,101,20,8
+    LTEXT           "0-7",IDC_NAME18,5,118,20,8
+    LTEXT           "0-7",IDC_NAME19,138,118,20,8
+    LTEXT           "0-7",IDC_NAME20,271,118,20,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Six Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Six\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Six.EXE\0"
+            VALUE "ProductName", "Six 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SIX_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 396
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 230
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Six.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

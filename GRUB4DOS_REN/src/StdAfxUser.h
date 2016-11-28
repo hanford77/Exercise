@@ -1,0 +1,2 @@
+//StdAfxUser.h
+#pragma once
