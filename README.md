@@ -29,4 +29,5 @@ TryLink --------------------------- 连连看游戏(MFC)
 VBA ------------------------------- 存放 VBA 代码  
 ├─水准网平差  
 └─度化为度分秒  
+WinNLS ---------------------------- Windows NLS(National Language Support，即国家语言支持)  
 WordBlogAccount ------------------- 管理 Word 博客账户(ATL、MFC)  
