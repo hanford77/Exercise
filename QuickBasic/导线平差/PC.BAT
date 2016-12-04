@@ -1,1 +1,0 @@
-C:\DOS\QBASIC /RUN PC

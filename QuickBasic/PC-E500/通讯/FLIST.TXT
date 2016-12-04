@@ -1,6 +1,0 @@
-REM 微机传入 PC-E500 的文件列表
-C:\ABC
-1.BAS
-2.BAS
-D:\Test
-3.DAT

@@ -1,1 +1,0 @@
-c:\dos\QBASIC /RUN GC.BAS

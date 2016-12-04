@@ -1,0 +1,274 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\mfcSocket.rc2""\r\n"
+    "#include ""afxres.rc""\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\mfcSocket.ico"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "mfcSocket  MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "mfcSocket\0"
+            VALUE "LegalCopyright", "Copyright (C) 2013\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "mfcSocket.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "mfcSocket Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 230, 107
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MFC Socket"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "TCP Server...",IDC_BTN_SYNC_TCP_SERVER,11,14,94,23
+    PUSHBUTTON      "TCP Client...",IDC_BTN_SYNC_TCP_CLIENT,11,41,94,23
+    PUSHBUTTON      "UDP...",IDC_BTN_SYNC_UDP,11,69,94,23
+    GROUPBOX        "同步(使用 CSocket)",IDC_STATIC,5,3,107,97
+    PUSHBUTTON      "TCP Server...",IDC_BTN_ASYNC_TCP_SERVER,123,14,94,23
+    PUSHBUTTON      "TCP Client...",IDC_BTN_ASYNC_TCP_CLIENT,123,41,94,23
+    PUSHBUTTON      "UDP...",IDC_BTN_ASYNC_UDP,123,69,94,23
+    GROUPBOX        "异步(使用 CAsyncSocket)",IDC_STATIC,117,3,107,97
+END
+
+IDD_TCP_CLIENT DIALOG DISCARDABLE  0, 0, 376, 213
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "TCP 异步通讯客户端"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "服务器 IP",IDC_STATIC,9,17,37,8
+    EDITTEXT        IDC_TXT_IP,53,14,97,14,ES_AUTOHSCROLL
+    LTEXT           "端口",IDC_STATIC,9,36,17,8
+    EDITTEXT        IDC_TXT_PORT,53,33,97,14,ES_AUTOHSCROLL
+    LTEXT           "本地地址",IDC_STATIC,9,55,33,8
+    EDITTEXT        IDC_TXT_LOCAL,53,52,97,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "连接",IDC_BTN_CONNECT,53,69,45,17
+    PUSHBUTTON      "断开",IDC_BTN_DISCONNECT,105,69,45,17
+    GROUPBOX        "连接服务器",IDC_STATIC,4,3,154,90
+    EDITTEXT        IDC_TXT_SEND,169,14,157,73,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "发送",IDC_BTN_SEND,332,42,33,17
+    GROUPBOX        "发送",IDC_STATIC,163,3,207,90
+    EDITTEXT        IDC_TXT_RECV,10,108,356,94,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "接收",IDC_STATIC,4,97,367,111
+END
+
+IDD_TCP_SERVER DIALOG DISCARDABLE  0, 0, 370, 213
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "TCP 异步通讯服务端"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "端口",IDC_STATIC,11,17,17,8
+    EDITTEXT        IDC_TXT_PORT,34,14,54,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "开始监听",IDC_BTN_CONNECT,34,32,54,20
+    PUSHBUTTON      "停止监听",IDC_BTN_DISCONNECT,34,57,54,20
+    GROUPBOX        "监听",IDC_STATIC,4,3,92,81
+    EDITTEXT        IDC_TXT_SEND,106,14,125,65,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "发送",IDC_BTN_SEND,238,57,41,20
+    GROUPBOX        "发送",IDC_STATIC,100,3,265,81
+    EDITTEXT        IDC_TXT_RECV,10,99,349,103,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "接收",IDC_STATIC,4,88,361,120
+    LISTBOX         IDC_LIST_CLIENT,238,14,120,39,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_UDP DIALOG DISCARDABLE  0, 0, 339, 197
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "UDP 异步通讯"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "绑定端口",IDC_CHK_BIND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,16,48,10
+    EDITTEXT        IDC_TXT_PORT,58,14,93,14,ES_AUTOHSCROLL
+    LTEXT           "本地地址",IDC_STATIC,10,36,33,8
+    EDITTEXT        IDC_TXT_LOCAL,58,33,93,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "打开",IDC_BTN_CONNECT,58,52,43,17
+    PUSHBUTTON      "关闭",IDC_BTN_DISCONNECT,108,52,43,17
+    GROUPBOX        "套接字",IDC_STATIC,5,3,154,73
+    EDITTEXT        IDC_TXT_SEND,170,14,157,34,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "发送至",IDC_BTN_SEND,170,52,33,17
+    EDITTEXT        IDC_TXT_REMOTE,208,53,119,14,ES_AUTOHSCROLL
+    GROUPBOX        "发送",IDC_STATIC,164,3,170,73
+    EDITTEXT        IDC_TXT_RECV,11,91,316,94,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "接收",IDC_STATIC,5,80,329,111
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_TCP_CLIENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 369
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 206
+    END
+
+    IDD_TCP_SERVER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 363
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 206
+    END
+
+    IDD_UDP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 332
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 190
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\mfcSocket.rc2"
+#include "afxres.rc"
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
